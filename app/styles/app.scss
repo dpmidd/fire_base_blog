@@ -1,0 +1,24 @@
+@import 'bower_components/susy/sass/susy';
+@import 'typography';
+
+
+html, body {
+  height: 100%;
+}
+
+.ember-view {
+  height:100%;
+  background: orange;
+}
+
+aside {
+  @include span(1 of 6);
+  height: 100%;
+  background: blue;
+}
+
+main.textfields{
+  @include span(5 of 6);
+  margin-left: span(1 of 6);
+  height: inherit;
+}
