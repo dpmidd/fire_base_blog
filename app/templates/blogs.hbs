@@ -1,5 +1,6 @@
 <aside>
   <h1> Blog Posts </h1>
+  {{#link-to 'blogs.new'}}New Blog{{/link-to}}
   {{#each blog in model}}
   <h5>{{#link-to 'blog' blog}}{{blog.title}}{{/link-to}}<h5>
   {{/each}}
