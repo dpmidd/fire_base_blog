@@ -1,24 +1,77 @@
+
 @import 'bower_components/susy/sass/susy';
+
+$susy : (
+gutters: (1/8)
+);
+
 @import 'typography';
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 
 html, body {
   height: 100%;
+  color: white;
+  @include span(6 of 6);
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
 
 .ember-view {
   height:100%;
-  background: orange;
+}
+
+textarea {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.ember-text-area {
+  height: 200px;
 }
 
 aside {
   @include span(1 of 6);
+  margin-left: span(.2 of 6);
   height: 100%;
-  background: blue;
+  background: black;
+  padding: 20px;
 }
 
-main.textfields{
-  @include span(5 of 6);
-  margin-left: span(1 of 6);
+main {
+  @include span(4 of 6);
   height: inherit;
+  background: #ff6161;
+  padding: 10px;
+}
+
+
+.save-button {
+  background: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.save-button:hover {
+  background: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }

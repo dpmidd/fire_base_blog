@@ -1,0 +1,10 @@
+<aside>
+  <h1> Blog Posts </h1>
+  {{#each blog in model}}
+  <h5>{{#link-to 'blog' blog}}{{blog.title}}{{/link-to}}<h5>
+  {{/each}}
+</aside>
+
+<main>
+  {{outlet}}
+</main>
